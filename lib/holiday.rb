@@ -90,7 +90,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday, data|
       x = holiday.slice(0, holiday.size)
       x.gsub!("_", " ")
-      puts "  " + x.capitalize + ": " + data.join(", ")
+      puts "  " + x.titlesize + ": " + data.join(", ")
     #  binding.pry
     end
   end
