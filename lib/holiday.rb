@@ -51,11 +51,11 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  holiday_hash.each do |holiday_season, holidayname|
-    binding.pry
-    #if holiday_season.has_value?(season) == false
-    #  holiday_season.store(holiday_name, supply_array)
-    #end
+  holiday_hash.each do |holiday_season, holidaynames|
+    
+    if holidaynames.has_value?(season) == false
+      holidaynames.store(holiday_name, supply_array)
+    end
   end
 end
 
