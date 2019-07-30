@@ -66,6 +66,7 @@ def all_winter_holiday_supplies(holiday_hash)
     #binding.pry
     if holiday_season == :winter
       holidaynames.each do |data|
+        binding.pry
         collection.join(data)
       end
     end
